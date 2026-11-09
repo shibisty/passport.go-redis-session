@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+### Changed
+- Requires `passport ^0.2` (the first published release of the core; `^0.1` matched no tag).
+
 ### Security
 - Redis keys are prefix + the SHA-256 of the session ID, not the ID: reading the keys
   no longer gives live session IDs. Sessions stored before are not found (users log in
