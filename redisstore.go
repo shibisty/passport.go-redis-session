@@ -1,5 +1,5 @@
 // Package redisstore implements passport.SessionStore on top of orm.KeyValueStore.
-// gtr package: passport-session-redis.
+// gtr package: @passport/session-redis.
 //
 // Any store implementing orm.KeyValueStore works; usually this is Redis
 // via orm-redis. Sessions are visible to all application instances.

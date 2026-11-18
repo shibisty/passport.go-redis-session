@@ -1,4 +1,4 @@
-# passport-session-redis
+# @passport/session-redis
 
 `passport.SessionStore` on top of `orm.KeyValueStore`: sessions in Redis, shared by all
 application instances. It depends on the [orm](https://github.com/shibisty/orm.go) core
@@ -8,8 +8,8 @@ rather than on a specific driver, so any orm key-value store will do; usually th
 ## Installation
 
 ```bash
-gtr add github:shibisty/passport.go github:shibisty/orm.go \
-        github:shibisty/orm.go-redis-driver github:shibisty/passport.go-redis-session
+gtr add passport github:shibisty/orm.go \
+        github:shibisty/orm.go-redis-driver @passport/session-redis
 ```
 
 `passport` (`^0.1`) and `orm` (`>=0.1 <0.3`) are peer dependencies: the application adds them, along with
@@ -17,7 +17,7 @@ the orm driver it uses for the key-value store.
 
 ## Usage
 
-Import as `redisstore "passport-session-redis"` (Go package `redisstore`).
+Import as `redisstore "passport/session-redis"` (Go package `redisstore`).
 
 ```go
 conn, err := orm.New(ctx, redis.Driver("redis://localhost:6379/0"))

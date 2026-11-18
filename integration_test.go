@@ -9,7 +9,7 @@ import (
 
 	"orm"
 	redis "orm-redis"
-	redisstore "passport-session-redis"
+	redisstore "passport/session-redis"
 	"passport/sessionstoretest"
 )
 
