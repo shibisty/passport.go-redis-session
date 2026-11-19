@@ -9,8 +9,8 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "orm": "github:shibisty/orm.go",
-        "orm-redis": "github:shibisty/orm.go-redis-driver",
+        "orm": "^0.2",
+        "@orm/redis": "^0.2",
         "passport": "^0.2"
     },
     "peerDependencies": {

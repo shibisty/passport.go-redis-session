@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"orm"
-	redis "orm-redis"
+	redis "orm/redis"
 	redisstore "passport/session-redis"
 	"passport/sessionstoretest"
 )

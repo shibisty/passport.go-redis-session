@@ -2,7 +2,7 @@
 // gtr package: @passport/session-redis.
 //
 // Any store implementing orm.KeyValueStore works; usually this is Redis
-// via orm-redis. Sessions are visible to all application instances.
+// via orm/redis. Sessions are visible to all application instances.
 //
 //	conn, _ := orm.New(ctx, redis.Driver("redis://localhost:6379/0"))
 //	sessions := redisstore.New(conn.(orm.KeyValueStore))

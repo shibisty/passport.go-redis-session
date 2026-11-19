@@ -3,13 +3,13 @@
 `passport.SessionStore` on top of `orm.KeyValueStore`: sessions in Redis, shared by all
 application instances. It depends on the [orm](https://github.com/shibisty/orm.go) core
 rather than on a specific driver, so any orm key-value store will do; usually that is
-[`orm-redis`](https://github.com/shibisty/orm.go-redis-driver).
+[`@orm/redis`](https://github.com/shibisty/orm.go-redis-driver).
 
 ## Installation
 
 ```bash
-gtr add passport github:shibisty/orm.go \
-        github:shibisty/orm.go-redis-driver @passport/session-redis
+gtr add passport orm \
+        @orm/redis @passport/session-redis
 ```
 
 `passport` (`^0.1`) and `orm` (`>=0.1 <0.3`) are peer dependencies: the application adds them, along with
@@ -38,7 +38,7 @@ a := passport.New().UseSessionStore(redisstore.New(kv).WithPrefix("myapp:session
 
 ## Tests
 
-In a checkout, run `gtr install` once (it also installs orm and orm-redis for the tests), then:
+In a checkout, run `gtr install` once (it also installs orm and @orm/redis for the tests), then:
 
 ```bash
 gtr run test                                                    # without Redis
