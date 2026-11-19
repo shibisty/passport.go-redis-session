@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/shibisty/gtr/main/schema/gtr.schema.json",
     "name": "@passport/session-redis",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "license": "MIT",
     "repository": "github:shibisty/passport.go-redis-session",
     "engines": {
@@ -9,8 +9,8 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "orm": "^0.2",
         "@orm/redis": "^0.2",
+        "orm": "^0.2",
         "passport": "^0.2"
     },
     "peerDependencies": {
